@@ -2,14 +2,14 @@
 	<nav id="nav">
 		<ul>
 			{% assign current = page.url | downcase | split: '/' %}
-			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
+			<li {% if current[1] == 'index.html' %}class='active'{% endif %}><a href="{{ site.baseurl }}/index.html">首页</a></li>
 			<li>
-				<a href="">Dropdown</a>
+				<a href="">培训课程</a>
 				<ul>
-					<li><a href="#">Lorem ipsum dolor</a></li>
-					<li><a href="#">Magna phasellus</a></li>
-					<li><a href="#">Etiam dolore nisl</a></li>
-					<li>
+					<li><a href="#">周末班</a></li>
+					<li><a href="#">暑假班</a></li>
+					<li><a href="#">在线兴趣班</a></li>
+<!-- 					<li>
 						<a href="">Phasellus consequat</a>
 						<ul>
 							<li><a href="#">Lorem ipsum dolor</a></li>
@@ -18,13 +18,14 @@
 							<li><a href="#">Etiam dolore nisl</a></li>
 							<li><a href="#">Veroeros feugiat</a></li>
 						</ul>
-					</li>
+					</li> 
 					<li><a href="#">Veroeros feugiat</a></li>
+					-->
 				</ul>
 			</li>
-			<li {% if current[1] == 'blog' %}class='current'{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
-			<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Left Sidebar</a></li>
-			<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
-			<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
+			<li><a href="{{ site.baseurl }}/blog">教学交流</a></li>
+			<li {% if current[1] == 'news.html' %}class='active'{% endif %}><a href="{{ site.baseurl }}/news.html">最新动态</a></li>
+			<li {% if current[1] == 'register.html' %}class='active'{% endif %}><a href="{{ site.baseurl }}/register.html">在线报名</a></li>
+			<li {% if current[1] == 'about.html' %}class='active'{% endif %}><a href="{{ site.baseurl }}/about.html">关于我们</a></li>
 		</ul>
 	</nav>
