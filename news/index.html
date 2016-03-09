@@ -1,0 +1,43 @@
+---
+title: Left-Sidebar
+layout: main
+---
+
+<!-- Main -->
+	<div id="main" class="wrapper style1">
+		<div class="container">
+			<div class="row">
+
+				<!-- Content -->
+				<div id="content" class="8u skel-cell-important">
+					<section>
+							<!-- the latest -->
+							{% for news in site.posts limit:1 %}
+								<header class="major">				
+									<span class="byline">{{ news.title }}</span>
+								</header>
+								{{news.content}}
+							{% endfor %}
+					</section>
+				</div>
+
+				<div id="sidebar" class="4u sidebar">
+					<h3 class="news-headline">以前的文章</h3>
+					{% for news in site.posts limit:3 offset:1 %}
+					<section>
+						<header class="major">
+							<h2><a href="{{ news.url | to_absoluteurl }}">{{ news.title }}</a></h2>
+						</header>
+						{{ news.excerpt }}
+						<img src="{{ news.baseurl }}/assets/{{ news.featured }}" alt="">
+					</section>
+					{% endfor %}
+					<p id="preview-end">
+						<a href="{{ 'archive.html' | to_absoluteurl }}">全部文章</a>
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+

@@ -1,0 +1,15 @@
+---
+title: 全部文章
+layout: main
+---
+
+<div id="main" class="wrapper style1">
+    <div class="container">
+            <h2>全部文章</h2>
+            {% for news in site.posts limit:10%}
+                <section>
+                    <h3><a href="{{ news.url | to_absoluteurl }}">{{ news.title }}</a></h3>
+                </section>
+            {% endfor %}                                
+    </div>
+</div>
