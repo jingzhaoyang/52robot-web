@@ -3,12 +3,12 @@
 		<ul>
 			{% assign current = page.url | downcase | split: '/' %}
 			<li {% if current[1] == 'index.html' %}class='active'{% endif %}><a href="{{ site.baseurl }}/index.html">首页</a></li>
-			<li>
+			<li {% if current[1] == 'training' %}class='active'{% endif %}>
 				<a href="">培训课程</a>
 				<ul>
-					<li><a href="#">周末班</a></li>
-					<li><a href="#">暑假班</a></li>
-					<li><a href="#">在线兴趣班</a></li>
+					<li><a href="{{ site.baseurl }}/training/weekend-class.html">周末班</a></li>
+					<li><a href="{{ site.baseurl }}/training/summer-vacation-class.html">暑假班</a></li>
+					<li><a href="{{ site.baseurl }}/training/online-class.html">在线兴趣班</a></li>
 <!-- 					<li>
 						<a href="">Phasellus consequat</a>
 						<ul>
