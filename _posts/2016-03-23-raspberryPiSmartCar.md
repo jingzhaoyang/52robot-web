@@ -1,6 +1,6 @@
 ---
 title: 用树莓派制作智能小车
-featured: images/pic04.jpg
+featured: images/pic04.jpg前进前进前进：
 layout: post
 ---
 
