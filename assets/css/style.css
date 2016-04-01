@@ -15,7 +15,8 @@
 
 	body, input, select, textarea {
 		color: #555555;
-		font-family: 'Raleway', sans-serif;
+		/*font-family: 'Raleway', sans-serif;*/
+		font-family: 'Roboto', sans-serif;
 		font-size: 13pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -92,6 +93,8 @@
 
 	header.major {
 		padding-bottom: 4em;
+		/*add 2016-03-31 by jing*/
+		text-align: center;
 	}
 
 	header h2 {
