@@ -14,9 +14,23 @@ layout: main
 					<section>
 						<header class="major">
 							<h2>在线报名</h2>
-							<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+							<span class="byline">请填写下面的报名表</span>
 						</header>
 					</section>
+					<form>
+		        <label>姓名</label>
+		        <input type="username" id="username" placeholder="姓名" required="" autofocus="">
+						<label>电话</label>
+		        <input type="phone" id="phone" placeholder="电话" required="" autofocus="">
+		        <!-- <label for="inputPassword" class="sr-only">Password</label>
+		        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required=""> -->
+		        <div class="checkbox">
+		          <label>
+		            <input type="checkbox" value="remember-me"> 选择课程
+		          </label>
+		        </div>
+		        <button class="button alt small" type="submit">报名参加</button>
+	      </form>
 				</div>
 
 				{% include sidebar.html %}
@@ -24,4 +38,3 @@ layout: main
 			</div>
 		</div>
 	</div>
-
