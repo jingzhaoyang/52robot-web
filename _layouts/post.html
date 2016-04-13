@@ -1,16 +1,47 @@
 ---
 layout: main
 ---
-<!-- Main -->
 	<div id="main" class="wrapper style1">
 		<div class="container">
-			<section>
-				<header class="major">
-					<h2>{{ page.title }}</h2>
-					<span class="byline">{{ page.date | date_to_string }}</span>
-				</header>
-				<img src="{{ site.baseurl }}/assets/{{ page.featured }}" alt="">
-				{{ page.content }}
-			</section>
+			<div class="row">
+
+				<!-- Content -->
+				<div id="content" class="8u skel-cell-important">
+					<section>
+							<!-- the news -->
+							<header class="major">
+								<span class="byline">{{ page.title }}</span>
+							</header>
+							{{ page.content }}
+					</section>
+				</div>
+
+				<div id="sidebar" class="4u sidebar">
+					<h3 class="news-headline">上一篇文章</h3>
+					{% if page.previous %}
+						<section>
+							<header class="major">
+								<h2><a href="{{ BASE_PATH }}{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
+							</header>
+							{{ page.previous.excerpt }}
+							<img src="{{ page.previous.baseurl }}/assets/{{ page.previous.featured }}" alt="">
+						</section>
+					{% endif %}
+					<h3 class="news-headline">下一篇文章</h3>
+					{% if page.next %}
+						<section>
+							<header class="major">
+								<h2><a href="{{ BASE_PATH }}{{ page.next.url }}">{{ page.next.title }}</a></h2>
+							</header>
+							{{ page.previous.excerpt }}
+							<img src="{{ page.next.baseurl }}/assets/{{ page.next.featured }}" alt="">
+						</section>
+					{% endif %}
+					<p id="preview-end">
+						<a href="{{ site.baseurl }}/news/archive.html">全部文章</a>
+					</p>
+				</div>
+
+			</div>
 		</div>
 	</div>

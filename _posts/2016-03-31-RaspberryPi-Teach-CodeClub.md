@@ -1,9 +1,9 @@
 ---
 title: 树莓派和Code Club合并，让孩子们学编程更容易
-featured: images/RaspberryPi.jpg
+featured: small-images/RaspberryPi.jpg
 layout: post
 ---
-![树莓派](/assets/images/RaspberryPi.jpg)
+<img src="/assets/images/RaspberryPi.jpg" alt="树莓派">
 Raspberry Pi（树莓派）自问世以来，就受到众多计算机发烧友和创客的追捧，曾经是一“派”难求，其强大的功能也受到了广大DIY爱好者的青睐。不过，这款信用卡大小的卡片式电脑的初衷是为了学生计算机编程教育而设计，以提升学校计算机科学及相关学科的教育、让计算机变得有趣为宗旨。
 
 目前Raspberry Pi销量惊人，迄今为止已经售出700万片，影响力巨大。日前，Raspberry Pi基金会CEO Philip Colligan宣布，Raspberry Pi将于Code Club合并，让更多的孩子能够学习计算机编程知识。
