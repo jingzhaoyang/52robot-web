@@ -31,22 +31,23 @@ layout: default
 			<div class="wrapper style2">
 				<section class="container">
 					<header class="major">
-<!-- 						<h2>我们的资源</h2>-->
-						<!-- <span class="byline">多媒体教室，</span> -->
+						<span class="byline">最新新闻</span>
 					</header>
 					<div class="row no-collapse-1">
+						{% for news in site.posts limit:3 %}
 						<section class="4u">
-							<a href="#" class="image feature"><img src="{{ site.baseurl }}/assets/images/smart.jpg" alt=""></a>
-							<p>丰富的智能硬件，以及配套的扩展设备。</p>
+							<a href="{{ news.url | to_absoluteurl }}" class="image feature"><img src="{{ news.baseurl }}/assets/{{ news.featured }}" alt=""></a>
+							<p>{{ news.title }}</p>
 						</section>
-						<section class="4u">
+						{% endfor %}
+						<!-- <section class="4u">
 							<a href="#" class="image feature"><img src="{{ site.baseurl }}/assets/images/classroom.jpg" alt=""></a>
 							<p>先进的多媒体设备，更好的学习体验。</p>
 						</section>
 						<section class="4u">
 							<a href="#" class="image feature"><img src="{{ site.baseurl }}/assets/images/teach.jpg" alt=""></a>
 							<p>自由放松的学习环境，充分释放自己的创意灵感。</p>
-						</section>
+						</section> -->
 
 					</div>
 				</section>

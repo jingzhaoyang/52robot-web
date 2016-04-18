@@ -650,6 +650,41 @@
 			margin-bottom: 3em;
 		}
 
+/* News */
+
+	.no-sidebar #news .major, .left-sidebar #news .major, .right-sidebar #news .major {
+		text-align: left;
+	}
+
+	.homepage #news .major {
+		text-align: center;
+	}
+
+	#news {
+		padding: 6em 0;
+	}
+
+		#news .sidebar .major {
+			padding-bottom: 2em;
+		}
+
+			#news .sidebar .major h2 {
+				font-size: 1.8em;
+			}
+
+		#news .sidebar .default li {
+			border-color: #cdcdcd;
+		}
+
+		#news .sidebar .default a {
+			color: #464646;
+		}
+
+		#news .sidebar > :first-child {
+			margin-bottom: 3em;
+		}
+
+
 /* Footer */
 
 	#footer {
