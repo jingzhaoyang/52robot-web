@@ -1,6 +1,6 @@
 ---
 title: 为什么说编程和英语是每个人都必须掌握的技能？
-featured: small-images/GirlsWhoCode.jpg
+featured: small-images/2016-coding1.jpg
 layout: post
 excerpt: 我们今天的主题要从奥巴马的一段演讲开始说起。这段视频是奥巴马去年应邀为美国在线编程教育网站code.org举办的“编程一小时”活动做的宣传片。
 ---
