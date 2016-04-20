@@ -2,6 +2,7 @@
 title: 52Robot社区暑假培训班开始报名啦
 featured: small-images/52robot-small-logo.jpg
 layout: post
+excerpt: 52Robot社区2016年暑假培训班报名活动以及开始了，欢迎大家来踊跃报名参加。
 ---
 
 52Robot社区2016年暑假培训班报名活动以及开始了，欢迎大家来踊跃报名参加。

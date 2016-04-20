@@ -2,6 +2,7 @@
 title: 谁在用树莓派编程
 featured: small-images/GirlsWhoCode.jpg
 layout: post
+excerpt: 这个视频是来自"Girls Who Code"组织，这是一个非营利组织，它致力于缩小在科技和工程领域的性别差距。
 ---
 <p>
 <embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=4408492&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
